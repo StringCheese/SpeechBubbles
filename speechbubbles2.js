@@ -9,7 +9,7 @@ var speechbubbles_tooltip={
 	loadcontent:function($, selector, options, callback){
 		var ajaxfriendlyurl=options.url.replace(/^http:\/\/[^\/]+\//i, "http://"+window.location.hostname+"/") 
 		$.ajax({
-			url: ajaxfriendlyurl, "https://github.com/StringCheese/SpeechBubbles/blob/master/speechdata.txt"
+			url: ajaxfriendlyurl, //path to external content
 			async: true,
 			dataType: 'html',
 			error:function(ajaxrequest){
