@@ -19,6 +19,7 @@
 <script type="text/javascript">
 
 jQuery(function($){ //on document.ready
+	headers: {'X-Requested-With': 'XMLHttpRequest'}
  	//Apply tooltip to links with class="addspeech", plus look inside 'speechdata.txt' for the tooltip markups
 	$('.addspeech').speechbubble({url:'speechdata.txt'})
 })
