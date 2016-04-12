@@ -13,7 +13,7 @@ var speechbubbles_tooltip={
 			async: true,
 			dataType: 'html',
 			error:function(ajaxrequest){
-				alert('Error fetching Ajax content.' + <br /> + 'Server Response: '+ajaxrequest.responseText)
+				alert('Error fetching Ajax content. <br /> Server Response: '+ajaxrequest.responseText)
 			},
 			success:function(content){
 				$(document.body).append(content)
